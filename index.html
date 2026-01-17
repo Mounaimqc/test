@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio —  Mounaim</title>
+    <meta name="description" content="Portfolio personnel — projets, à propos et contact." />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">Cheraga Abd El Mounaim </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+        <nav id="main-nav" class="nav">
+          <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Bonjour — je suis <span class="highlight">Cheraga Abd EL Mounaim </span></h1>
+          <p class="lead">Développeur web / Designer UI — je crée des applications web modernes et accessibles.</p>
+          <p class="hero-cta">
+            <a class="btn" href="#projects">Voir mes projets</a>
+            <a class="btn ghost" href="#contact">Me contacter</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <h2>À propos</h2>
+        <div class="about-grid">
+          <figure class="profile-card">
+            <img src="me.jpg" alt="Photo de Cheraga Abd EL Mounaim" class="profile-photo">
+          </figure>
+          <div class="about-content">
+            <p>Je suis un développeur web passionné par la création d'expériences utilisateur élégantes et performantes. J'aime travailler avec HTML, CSS et JavaScript, et apprendre de nouvelles technologies.</p>
+            <ul>
+              <li><strong>Compétences:</strong> HTML, CSS, JS, React</li>
+              <li><strong>Langues:</strong> Français, Anglais</li>
+              <li><strong>Localisation:</strong> Sétif, Algérie</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects container">
+        <h2>Projets</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="card-media">Projet 1</div>
+            <div class="card-body">
+              <h3>Projet 1</h3>
+              <p>Développement d'un systéme intelligent pour malade de diabéts.</p>
+              <p><a class="link" href="projet1.html">Voir le Projet </a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">Projet 2</div>
+            <div class="card-body">
+              <h3>Projet 2</h3>
+              <p>Courte description du projet. Tech: React, API.</p>
+              <p><a class="link" href="#">Voir sur GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">Projet 3</div>
+            <div class="card-body">
+              <h3>Projet 3</h3>
+              <p>Courte description du projet. Tech: Node.js, Express.</p>
+              <p><a class="link" href="#">Voir sur GitHub</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2>Contact</h2>
+        <p>Envoyez-moi un message pour discuter d'un projet ou d'une collaboration.</p>
+        <form id="contact-form" class="contact-form">
+  <label>
+    Nom
+    <input type="text" name="name" required>
+  </label>
+  <label>
+    Email
+    <input type="email" name="email" required>
+  </label>
+  <label>
+    Message
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+  <p><button class="btn" type="submit">Envoyer</button></p>
+</form>
+<p id="status"></p>
+
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Cheraga Abd El Mounaim. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

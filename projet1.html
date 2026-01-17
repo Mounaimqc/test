@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projet 1 — Streamlit</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Styles locaux simples si `styles.css` absent ou minimal */
+      body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
+      header { padding: 1rem; background:#0a74da; color: #fff; }
+      main { padding: 1rem; }
+      .notice { background:#0c3762; border-left:4px solid #0a74da; padding: .75rem; margin-bottom:1rem;; }
+      pre.cmd { background:#222; color:#eee; padding: .75rem; overflow:auto; }
+      .frame-wrap { width:100%; height:80vh; border: 1px solid #ddd; }
+      iframe { width:100%; height:100%; border:0; }
+      .center { text-align:center; }
+      li {margin-left: 25px;}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Projet 1 — Application Streamlit</h1>
+    </header>
+
+    <main>
+      <p>Cette page intègre une application Python développée avec <strong>Streamlit</strong> via un <em>iframe</em>. L'app Streamlit doit être lancée localement (sur votre machine) pour s'afficher ici.</p>
+
+      <div class="notice">
+        <strong>Étapes rapides pour lancer l'app (Windows / PowerShell) :</strong>
+        <ol>
+          <li class="li">Ouvrez PowerShell dans le dossier contenant votre script Streamlit (ex: <code>app.py</code>).</li>
+          <li>Installez Streamlit si nécessaire :
+            <pre class="cmd">python -m pip install --upgrade pip; python -m pip install streamlit</pre>
+          </li>
+          <li>Lancez l'app (remplacez <code>app.py</code> par le nom de votre fichier) :
+            <pre class="cmd">python -m streamlit run .\app.py --server.port 8501 --server.address 127.0.0.1</pre>
+          </li>
+        </ol>
+      </div>
+
+      <p class="center"><strong>Iframe d'intégration :</strong></p>
+      <div class="center" style="margin-top:40px;">
+  <a href="https://app-project-yww85ma7kyfsynpsghzrha.streamlit.app/"
+     target="_blank"
+     style="
+       display:inline-block;
+       padding:15px 30px;
+       background:#0a74da;
+       color:white;
+       text-decoration:none;
+       border-radius:8px;
+       font-size:18px;
+     ">
+       Streamlit application link
+  </a>
+</div>
+
+      <p class="center" style="margin-top:.5rem;">
+        Si l'iframe ci‑dessus est vide ou bloquée, ouvrez l'application dans un nouvel onglet :
+        <a href="https://app-project-yww85ma7kyfsynpsghzrha.streamlit.app/" target="_blank" rel="noopener">Ouvrir l'app Streamlit</a>
+      </p>
+
+      <section style="margin-top:1rem;">
+        <h2>Notes et dépannage</h2>
+        <ul>
+          <li>Assurez-vous que l'application Streamlit tourne (la commande précédente va afficher une URL locale comme <code>http://localhost:8501</code>).</li>
+          <li>Si vous changez le port, mettez à jour l'attribut <code>src</code> de l'iframe (par ex. <code>http://localhost:8502</code>).</li>
+          <li>Certains navigateurs ou versions de Streamlit peuvent empêcher l'intégration en iframe pour des raisons de sécurité (en-tête <code>X-Frame-Options</code>). Dans ce cas, utilisez le lien pour ouvrir l'app dans un nouvel onglet.</li>
+          <li>Pour une utilisation en réseau local (depuis une autre machine), exécutez Streamlit avec <code>--server.address 0.0.0.0</code> et adaptez l'URL de l'iframe (et les règles de pare-feu).</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
